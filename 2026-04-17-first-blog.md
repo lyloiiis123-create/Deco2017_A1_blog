@@ -2,11 +2,11 @@
 title: "Understanding the Problem: Designing for Students with Attention Difficulties"
 date: 2026-04-17
 author: "Yan LIU"
-summary: "Exploring the core problem and user needs behind an ADHD-focused study tracking application.
+summary: "Exploring the core problem and user needs behind an ADHD-focused study tracking application."
 tags:
- - requirements
-- user-analysis
-- adhd
+  - requirements
+  - user-analysis
+  - adhd
 ---
 
 One of the key challenges in developing web applications is clearly identifying the problem they are intended to solve. In this project, I chose to design a learning tracking app specifically for students with attention deficit disorder (e.g., ADHD). Unlike developing general productivity tools, this focus allowed me to consider more specific user needs and limitations.
