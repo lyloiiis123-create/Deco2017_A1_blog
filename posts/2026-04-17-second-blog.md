@@ -1,20 +1,12 @@
 ---
-
-Title: Defining Core Functional Requirements: What is Essential and What is Optional?
-
-Date: 2026-04-17
-
-Author: Yan LIU
-
-Summary: Identifying essential features and managing scope through prioritization and trade-offs.
-
-Tags:
-
-- functional-requirements
-
-- scope
-- design-decisions
-
+title: "Defining Core Functional Requirements: What is Essential and What is Optional?"
+date: 2026-04-17
+author: "Yan LIU"
+summary: "Identifying essential features and managing scope through prioritization and trade-offs."
+tags:
+  - functional-requirements
+  - scope
+  - design-decisions
 ---
 
 Following the previous article's initial exploration of user needs, the next step is to define the application's functional requirements. A key challenge in this process is distinguishing between core and optional functions. Failure to do so risks exceeding the project's feasible scope and reducing design clarity.
