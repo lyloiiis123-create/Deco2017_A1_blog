@@ -3,7 +3,7 @@ this is for doing the tutorial assignment, it will post 4-6 blogs
 ---
 
 title: Understanding the Problem: Designing for Students with Attention Difficulties
-date: 2026-03-20
+date: 2026-04-17
 author: Your Name
 summary: Exploring the core problem and user needs behind an ADHD-focused study tracking application.
 tags:
