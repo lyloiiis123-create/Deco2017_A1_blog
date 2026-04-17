@@ -1,0 +1,25 @@
+---
+title: "Understanding the Problem: Designing for Students with Attention Difficulties"
+date: 2026-04-17
+author: "Yan LIU"
+summary: "Exploring the core problem and user needs behind an ADHD-focused study tracking application."
+tags:
+  - requirements
+  - user-analysis
+  - adhd
+---
+
+One of the key challenges in developing web applications is clearly identifying the problem they are intended to solve. In this project, I chose to design a learning tracking app specifically for students with attention deficit disorder (e.g., ADHD). Unlike developing general productivity tools, this focus allowed me to consider more specific user needs and limitations.
+
+Students with attention deficit disorder often struggle to maintain focus, manage multitasking, and stick to learning over long periods. Traditional productivity tools tend to emphasize efficiency, workload, and feature richness. However, these features can actually increase the cognitive load for users who are already easily distracted. This raises an important design question: should productivity apps maximize functionality or reduce complexity to better serve the user?
+
+First, I would consider developing a feature-rich platform, including task tracking, study timers, and a resource-sharing system where users can upload and browse learning materials. While this approach offers extensive functionality, it also significantly increases the complexity of the user experience and technical implementation. Too many features could confuse or cause users with short attention spans to lose interest.
+
+Another approach prioritizes simplicity, focusing on a core set of functions. In this model, the app would primarily support setting up and tracking the completion of daily tasks. By limiting the number of actions and decisions users need to make, the app can better meet the needs of its target users. This approach also reduces the technical complexity of the project, making it more feasible within a given timeframe.
+
+Currently, I favor the second approach, where the app's design goal is to reduce cognitive load rather than maximize efficiency. This decision reflects our recognition that "more features" does not necessarily mean "better design," especially for users with specific accessibility needs.
+
+However, some uncertainties remain. For example, it's unclear how many features can be removed before the app becomes unusable due to its limited functionality. Furthermore, I need to further explore whether certain features, such as visual progress tracking, can be added without increasing complexity.
+
+In conclusion, this preliminary analysis highlights the importance of aligning functional requirements with user needs. The design process should not begin with a list of features, but rather with a clear understanding of the challenges and limitations faced by users. This will help in making more informed decisions in later development phases.
+
