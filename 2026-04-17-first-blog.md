@@ -1,17 +1,12 @@
-# Deco2017_A1_blog
-this is for doing the tutorial assignment, it will post 4-6 blogs 
 ---
-
-title: Understanding the Problem: Designing for Students with Attention Difficulties
+title: "Understanding the Problem: Designing for Students with Attention Difficulties"
 date: 2026-04-17
-author: Your Name
-summary: Exploring the core problem and user needs behind an ADHD-focused study tracking application.
+author: "Yan LIU"
+summary: "Exploring the core problem and user needs behind an ADHD-focused study tracking application.
 tags:
-
-- requirements
+ - requirements
 - user-analysis
 - adhd
-
 ---
 
 One of the key challenges in developing web applications is clearly identifying the problem they are intended to solve. In this project, I chose to design a learning tracking app specifically for students with attention deficit disorder (e.g., ADHD). Unlike developing general productivity tools, this focus allowed me to consider more specific user needs and limitations.
