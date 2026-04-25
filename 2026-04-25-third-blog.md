@@ -1,8 +1,8 @@
 ---
-title: “Balancing Simplicity and Functionality: Do We Need User Accounts?”
+title: "Balancing Simplicity and Functionality: Do We Need User Accounts?"
 date: 2026-04-25
-author: “Yan LIU”
-summary: “Evaluating whether user authentication is necessary for a low-cognitive-load study tracking application.”
+author: "Yan LIU"
+summary: "Evaluating whether user authentication is necessary for a low-cognitive-load study tracking application."
 tags:
   - design-decisions
   - architecture
