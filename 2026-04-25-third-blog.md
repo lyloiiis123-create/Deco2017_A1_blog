@@ -10,13 +10,13 @@ tags:
   - trade-offs
 ---
 
-As the functional requirements of the application become clearer, an important design decision emerges: whether the system should include user accounts and authentication. While this feature is common in many web applications, its necessity in this specific context is not immediately obvious.
+As the application's functional requirements become clearer, an important design decision emerges: whether the system should include user accounts and authentication. While this feature is common in many web applications, its necessity in this specific context is not immediately obvious.
 
 On the one hand, implementing a user account system provides several clear advantages. It allows users to store their task data persistently across devices and sessions. This would support long-term progress tracking, which aligns with the previously identified requirement of maintaining user motivation over time. Additionally, authentication enables more advanced features in the future, such as personalized insights or cloud-based backups.
 
 However, introducing user accounts also brings significant trade-offs. From a user experience perspective, requiring registration and login adds friction to the interaction flow. For students with attention difficulties, even small barriers can reduce engagement or discourage consistent use. This directly conflicts with the design goal of minimizing cognitive load and simplifying user interaction.
 
-From a technical perspective, authentication substantially increases system complexity. It requires secure handling of user credentials, session management, and potentially backend infrastructure such as databases and APIs. Given the limited scope of this prototype and current development constraints, this added complexity may not be justified by the immediate benefits.
+From a technical perspective, authentication substantially increases system complexity. It requires secure handling of user credentials, session management, and potentially backend infrastructure such as databases and APIs. Given the limited scope of this prototype and current development constraints, this added the immediate benefits may not justify the complexity.
 
 An alternative approach is to avoid user accounts entirely in the initial version of the application. Instead, task data could be stored locally within the browser (e.g., using local storage). This would allow users to quickly access and use the application without any setup process. While this limits cross-device access and long-term data persistence, it significantly simplifies both the user experience and the technical implementation.
 
