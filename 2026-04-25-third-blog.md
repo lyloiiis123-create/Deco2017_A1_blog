@@ -7,7 +7,6 @@ tags:
   - design-decisions
   - architecture
   - authentication
-  - trade-offs
 ---
 
 As the application's functional requirements become clearer, an important design decision emerges: whether the system should include user accounts and authentication. While this feature is common in many web applications, its necessity in this specific context is not immediately obvious.
