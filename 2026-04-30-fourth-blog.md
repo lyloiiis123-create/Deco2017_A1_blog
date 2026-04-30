@@ -16,12 +16,13 @@ The key functional requirements identified earlier include creating daily tasks,
 The first approach is to separate tasks and progress into different data entities. In this model, tasks would be stored independently, while a separate structure would record when tasks are completed. This approach allows for more flexible and detailed tracking, such as analysing user behaviour over multiple days or generating long-term progress insights. However, it also introduces additional complexity. Managing relationships between multiple data entities increases both the technical difficulty and the effort required to maintain the system.
 
 *Figure 1: Complex data structure with separate task and progress entities*  
-![Complex Data Structure](complex solution.png)
+
+<img width="281" height="221" alt="Complex solution" src="https://github.com/user-attachments/assets/e52df5f6-ed91-4103-be4c-045bf9b189b1" />
 
 The second approach is to combine task and progress information into a single, simplified structure. In this model, each task contains its own completion status and associated date. For example, a task could include a description, a date, and a boolean value indicating whether it has been completed. This approach removes the need to manage relationships between separate entities and simplifies both data storage and retrieval.
 
 *Figure 2: Simplified task-based data structure*  
-![Simplified Task Data Structure](task-structure.png)
+<img width="281" height="221" alt="task-structure" src="https://github.com/user-attachments/assets/cd5eb914-dd5e-485b-bcc1-31caa6adcff7" />
 
 At this stage, I have chosen the second approach. Since the application does not include user accounts or complex analytics, a simplified data model is sufficient to support the core requirements. This decision is consistent with the overall design goal of reducing cognitive load, not only for users but also within the development process.
 
