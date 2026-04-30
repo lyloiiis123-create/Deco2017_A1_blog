@@ -9,26 +9,26 @@ tags:
   - design-decisions
 ---
 
+As the core functionality of the application becomes more clearly defined, it is necessary to consider how data should be structured to support these features. Although the application aims to remain simple, its underlying data model plays a critical role in determining both usability and implementation complexity.
 
-As the core functionality of the application becomes more defined, it is necessary to consider how data should be structured to support these features. While the application aims to remain simple, its underlying data model still plays a critical role in determining both usability and implementation complexity.
+The key functional requirements identified earlier include creating daily tasks, marking tasks as complete, and tracking progress over time. To support these features, I considered two different approaches to structuring task and progress data.
 
-The primary functional requirements identified earlier include creating daily tasks, marking them as complete, and tracking progress over time. To support these features, I considered two possible approaches to structuring task and progress data.
+The first approach is to separate tasks and progress into different data entities. In this model, tasks would be stored independently, while a separate structure would record when tasks are completed. This approach allows for more flexible and detailed tracking, such as analysing user behaviour over multiple days or generating long-term progress insights. However, it also introduces additional complexity. Managing relationships between multiple data entities increases both the technical difficulty and the effort required to maintain the system.
 
-The first approach is to separate tasks and progress into different data entities. In this model, tasks would be stored independently, while progress records would track when tasks are completed. This structure allows for more detailed analytics, such as tracking completion history over multiple days or generating insights into user behaviour. However, this approach introduces additional complexity. It requires managing relationships between entities, increasing both implementation effort and cognitive overhead when reasoning about the system.
+*Figure 1: Complex data structure with separate task and progress entities*  
+![Complex Data Structure](complex solution.png)
 
-The second approach is to combine task and progress information into a single, simplified structure. In this model, each task includes its own completion status and date. For example, a task could include fields such as description, completion status, and associated date. This approach reduces the need for managing relationships between separate data entities and simplifies both storage and retrieval.
+The second approach is to combine task and progress information into a single, simplified structure. In this model, each task contains its own completion status and associated date. For example, a task could include a description, a date, and a boolean value indicating whether it has been completed. This approach removes the need to manage relationships between separate entities and simplifies both data storage and retrieval.
 
-At this stage, I have chosen the second approach. Given that the application does not include user accounts or complex analytics, a simplified data model is sufficient to meet the core requirements. This decision aligns with the overall design goal of minimizing cognitive load, not only for users but also within the development process itself.
+*Figure 2: Simplified task-based data structure*  
+![Simplified Task Data Structure](task-structure.png)
 
-To illustrate this, the data structure can be conceptualized as a single “Task” entity:
+At this stage, I have chosen the second approach. Since the application does not include user accounts or complex analytics, a simplified data model is sufficient to support the core requirements. This decision is consistent with the overall design goal of reducing cognitive load, not only for users but also within the development process.
 
-Task ID
-Description
-Date
-Completion Status
+As shown in Figure 2, the simplified structure represents all necessary information within a single entity. Compared to Figure 1, this reduces the need for managing relationships and keeps the system easier to reason about and implement.
 
-This structure allows the system to easily display daily tasks and track completion without requiring complex queries or data transformations. It also supports the use of local storage, which was chosen in the previous design decision.
+The data structure can be conceptualised as a single "Task" entity containing the following attributes: an identifier, a description, a date, and a completion status. This structure allows the application to efficiently display daily tasks and track progress without requiring complex queries or data processing.
 
-However, this simplified approach has limitations. It may not support more advanced features, such as tracking long-term trends or generating detailed progress reports. If such features become necessary in future iterations, the data model may need to be refactored into a more modular structure.
+However, this simplified approach has limitations. It may not support more advanced features, such as detailed progress analytics or long-term behavioural tracking. If such features become necessary in future iterations, the data model may need to be redesigned into a more modular structure with separate entities.
 
-In conclusion, this decision demonstrates that data design is not only a technical concern but also a reflection of functional priorities. By choosing a simpler data structure, the application remains aligned with its core goal of reducing complexity while still supporting essential user needs. Future development may revisit this decision as requirements evolve.
+In conclusion, this decision highlights that data design is not only a technical concern but also a reflection of functional priorities. By choosing a simpler data structure, the application remains aligned with its core objective of reducing complexity while still supporting essential user needs.
