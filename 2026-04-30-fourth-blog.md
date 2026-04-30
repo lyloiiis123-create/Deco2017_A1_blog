@@ -22,7 +22,9 @@ The first approach is to separate tasks and progress into different data entitie
 The second approach is to combine task and progress information into a single, simplified structure. In this model, each task contains its own completion status and associated date. For example, a task could include a description, a date, and a boolean value indicating whether it has been completed. This approach removes the need to manage relationships between separate entities and simplifies both data storage and retrieval.
 
 *Figure 2: Simplified task-based data structure*  
-<img width="281" height="221" alt="task-structure" src="https://github.com/user-attachments/assets/cd5eb914-dd5e-485b-bcc1-31caa6adcff7" />
+
+<img width="401" height="181" alt="task-structure" src="https://github.com/user-attachments/assets/0f7cb18c-7534-4eba-8925-33dfd8d9c244" />
+
 
 At this stage, I have chosen the second approach. Since the application does not include user accounts or complex analytics, a simplified data model is sufficient to support the core requirements. This decision is consistent with the overall design goal of reducing cognitive load, not only for users but also within the development process.
 
