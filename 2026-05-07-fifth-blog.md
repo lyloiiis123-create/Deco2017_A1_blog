@@ -1,0 +1,30 @@
+---
+title: Evaluating Simplicity: Planning for Usability and Accessibility
+date: 2026-02-14
+author: Your Name
+summary: An evaluation of usability, accessibility, and ethical considerations when designing a simplified productivity application for students with attention difficulties.
+tags:
+  - usability
+  - accessibility
+  - web-design
+---
+
+Evaluating Simplicity: Planning for Usability and Accessibility
+
+As the overall structure and functionality of the application become more clearly defined, it is necessary to consider how the design should be evaluated once implemented. Although the application has been intentionally simplified to reduce cognitive load, simplicity alone does not guarantee that the system will effectively support its intended users. Therefore, the next stage of planning involves evaluating whether the application's design decisions genuinely improve usability and accessibility for students with attention difficulties.
+
+One important consideration is how usability should be measured. Traditional productivity applications are often evaluated based on efficiency, feature completeness, or the number of supported workflows. However, these criteria may not be appropriate for this project. Since the primary goal of the application is to reduce distraction and support focus, the evaluation process should instead examine whether users can complete essential tasks with minimal confusion and mental effort.
+
+To assess this, I plan to focus on task-based usability evaluation. Users would be asked to perform a small number of core actions, such as creating a task, marking it as complete, and reviewing daily progress. During this process, observations could be made regarding how easily users understand the interface, whether they become distracted during interactions, and whether unnecessary steps create friction within the workflow. This approach is more aligned with the application's functional priorities than simply measuring how many features are available.
+
+Another key area of evaluation is accessibility. While accessibility is often associated with visual impairments or keyboard navigation, this application also involves cognitive accessibility considerations. Since the target users may struggle with attention management and information overload, the interface should minimise unnecessary complexity and reduce cognitive strain wherever possible.
+
+Several design choices have been made with this goal in mind. For example, the application intentionally limits the number of visible actions on each screen. Rather than displaying multiple tools or menus simultaneously, the interface focuses only on the most essential tasks. This decision aims to reduce visual clutter and lower the likelihood of distraction. In addition, maintaining a consistent layout and interaction structure across different pages may help users develop familiarity with the system and reduce the mental effort required to navigate the application.
+
+The use of colour, animation, and notifications must also be carefully considered. While these features can improve engagement in some contexts, excessive visual stimulation may negatively affect users with attention difficulties. As a result, the application should avoid unnecessary animations or highly saturated visual elements that could compete for the user's attention. This reflects a trade-off between creating an engaging interface and maintaining a calm, predictable user experience.
+
+Performance is another factor that should be evaluated. Even though the application is relatively lightweight, slow interactions or delayed feedback could interrupt user focus and reduce usability. Since the application currently relies on local browser storage rather than remote servers or databases, the system should provide fast response times for core interactions such as saving or updating tasks. However, this simplified technical approach may limit scalability if more advanced features are introduced in the future.
+
+In addition to usability and accessibility, there are also ethical considerations associated with the application's design. Although the system is intended to support students with attention difficulties, it should not be presented as a medical or therapeutic solution. Instead, it should be understood as a lightweight productivity support tool. Making exaggerated claims about improving concentration or academic performance could create unrealistic expectations and would not be professionally responsible.
+
+Overall, planning for evaluation highlights that successful application design is not only about implementing functionality, but also about understanding how users experience the system in practice. The effectiveness of this project should therefore be judged not by the number of features included, but by how well the application supports its intended users while remaining simple, accessible, and focused on their actual needs.
