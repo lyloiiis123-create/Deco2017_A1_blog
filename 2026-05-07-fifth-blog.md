@@ -1,8 +1,8 @@
 ---
-title: Evaluating Simplicity: Planning for Usability and Accessibility
-date: 2026-02-14
-author: Your Name
-summary: An evaluation of usability, accessibility, and ethical considerations when designing a simplified productivity application for students with attention difficulties.
+title: "Evaluating Simplicity: Planning for Usability and Accessibility"
+date: 2026-05-07
+author: "Yan LIU"
+summary: "An evaluation of usability, accessibility, and ethical considerations when designing a simplified productivity application for students with attention difficulties."
 tags:
   - usability
   - accessibility
