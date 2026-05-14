@@ -23,8 +23,11 @@ This introduces an important design trade-off. Providing feedback can improve mo
 
 As a result, any future expansion of the application should follow the same principle established in earlier design decisions: additional functionality should only be introduced if it directly supports the user's core needs without significantly increasing cognitive complexity. This means that future features should remain lightweight, predictable, and optional wherever possible.
 
-This reflection also affects technical planning. Although the current simplified data structure and local storage approach are sufficient for the prototype, future expansion may eventually require more scalable architecture. For example, if long-term progress tracking or cross-device synchronization becomes necessary, the application may need a database-backed system and user authentication. However, introducing these systems too early could increase implementation complexity before their value is clearly justified.
+This reflection also affects technical planning. Although the current simplified data structure and local storage approach are sufficient for the prototype, future expansion may eventually require a more scalable architecture. For example, if long-term progress tracking or cross-device synchronization becomes necessary, the application may need a database-backed system and user authentication. However, introducing these systems too early could increase implementation complexity before their value is clearly justified.
 
 At this stage, the project continues to prioritise clarity and feasibility over feature expansion. Revisiting earlier assumptions has reinforced that successful design is not about continuously adding functionality, but about carefully evaluating whether each addition genuinely improves the user experience.
 
 Ultimately, this process demonstrates that design decisions should remain flexible and open to reassessment throughout development. Rather than treating early decisions as fixed, it is important to continually reflect on how well the application aligns with its original purpose: supporting students with attention difficulties through a simple, focused, and accessible learning environment.
+
+<img width="261" height="211" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/a71a1932-7f99-4fe7-9ae6-56bd5e4a5fec" />
+
