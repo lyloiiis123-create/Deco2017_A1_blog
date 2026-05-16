@@ -2,52 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Revisiting Earlier Assumptions: Balancing Simplicity and Community Support</title>
+  <title>Integrating Community Features within a Low Cognitive Load Task System</title>
 </head>
+
 <body>
 
-  <h1>Revisiting Earlier Assumptions: Balancing Simplicity and Community Support</h1>
+  <h1>Integrating Community Features within a Low Cognitive Load Task System</h1>
 
-  <p><strong>Date:</strong> 2026-05-16</p>
+  <p><strong>Date:</strong> 2026-05-17</p>
   <p><strong>Author:</strong> Yan LIU</p>
-  <p><strong>Summary:</strong> Reflecting on earlier design assumptions and reconsidering how lightweight community interaction can support students with attention difficulties without increasing cognitive load.</p>
+  <p><strong>Summary:</strong> Defining how a required community feature is implemented within an ADHD-focused productivity system while maintaining low cognitive load, usability, and accessibility constraints.</p>
 
-  <p><strong>Tags:</strong> design-reflection, community, accessibility</p>
+  <p><strong>Tags:</strong> functional-requirements, accessibility, design-decisions</p>
 
   <hr>
 
+  <h2>Defining functional requirements for community interaction</h2>
+
   <p>
-    As the project developed, earlier design decisions focused primarily on creating a simple productivity support tool for students with attention difficulties such as ADHD. Previous reflections emphasised reducing cognitive load through minimal interfaces, limited functionality, and simplified task tracking systems. However, after revisiting the BlaBla Corp design brief, it became clear that the project should not only function as a personal productivity application but also as a community hub that encourages interaction and shared experiences between users.
+    The application is designed as a task management system for students with attention difficulties such as ADHD. The core functionality includes creating tasks, tracking completion, and monitoring progress over time. In addition to these core features, the BlaBla design brief requires the inclusion of a community feature to support user interaction and shared experiences.
   </p>
 
   <p>
-    This reflection revealed an important limitation in the earlier design direction. While simplifying the interface successfully reduced distraction and usability complexity, it also unintentionally removed opportunities for social connection and peer support. Since the design brief highlights community engagement as a central requirement, the application must balance simplicity with meaningful forms of interaction.
+    However, introducing community functionality creates a design challenge: social interaction can improve motivation but also increase cognitive load. As a result, the implementation must balance interaction requirements with accessibility constraints.
+  </p>
+
+  <h2>Simplified community system design</h2>
+
+  <p>
+    The community system is implemented using a lightweight CommunityPost structure that stores short text messages, optional usernames, and timestamps. The system supports encouragement messages, study tips, and optional mood check-ins.
   </p>
 
   <p>
-    The challenge, therefore, becomes more complex than simply reducing features. The system must support community participation without introducing overwhelming interface complexity or unnecessary distractions. For users with attention difficulties, highly interactive social platforms may increase cognitive strain rather than improve the experience. As a result, future community features should remain lightweight, optional, and carefully integrated into the existing simplified structure.
+    To satisfy the requirement while maintaining usability, more complex social features have been deliberately excluded, including real-time chat systems, comment threads, likes or ranking mechanisms, and algorithmic content feeds.
   </p>
 
   <p>
-    Rather than implementing complex social networking systems such as large discussion feeds or constant notifications, the platform could introduce smaller community-oriented interactions. Examples may include sharing study strategies, optional daily check-ins, anonymous encouragement posts, or lightweight progress sharing between users. These features would allow users to feel supported by a community while maintaining a calm and predictable interface.
-  </p>
-
-  <h2>Revised Design Direction</h2>
-
-  <p>
-    Figure 1 illustrates the revised design direction. The original prototype focused mainly on individual task management and progress tracking. The updated direction introduces a lightweight community layer while still preserving the core principle of low cognitive load.
-  </p>
-
-  <img width="341" height="321"
-       alt="Diagram showing ADHD student hub with personal task management and lightweight community support features"
-       src="https://github.com/user-attachments/assets/0704e6b2-515c-47f9-aa58-f8ade8c07af8" />
-
-  <p>
-    <em>Figure 1: Revised ADHD community hub structure balancing simplicity and lightweight social support</em>
+    These features were removed because they would increase cognitive load, introduce distraction, and conflict with the ADHD-focused design goal of maintaining a calm and predictable interface.
   </p>
 
   <p>
-    This revised perspective reinforces that successful design is not determined by the number of features included, but by how effectively the system supports user needs within its intended context. Moving forward, future design decisions will continue prioritising accessibility and cognitive simplicity while also exploring how carefully designed community interaction can improve user motivation and support.
+    Instead, the community system is designed as a simplified interaction layer that still fulfils the required social function without dominating the user experience.
+  </p>
+
+  <h2>System architecture and implementation</h2>
+
+  <p>
+    The application architecture is structured into three functional layers:
+  </p>
+
+  <ul>
+    <li>Task system: core productivity functionality (create, complete, delete tasks)</li>
+    <li>Timer system: focus support and time management</li>
+    <li>Community system: lightweight interaction and motivation layer</li>
+  </ul>
+
+  <p>
+    All data is stored using localStorage, avoiding backend complexity and ensuring fast, responsive interactions. This supports the design goal of reducing both technical and cognitive complexity.
+  </p>
+
+  <h2>Figure 1: System architecture and functional hierarchy</h2>
+
+  <p>
+    The diagram below illustrates the system architecture and functional hierarchy. It shows how the required community feature is implemented as a constrained layer alongside the core task and timer systems.
+  </p>
+
+  <img width="481" height="441"
+       alt="System architecture showing Task System, Timer System, and Community System with LocalStorage persistence"
+       src="https://github.com/user-attachments/assets/6af2c985-974c-415a-ba50-e02caac724c1" />
+
+  <p>
+    <em>Figure 1: System architecture and functional hierarchy showing constrained community integration within a low cognitive load system</em>
+  </p>
+
+  <h2>Accessibility considerations</h2>
+
+  <p>
+    Accessibility is treated as a functional requirement of the system. In addition to standard visual accessibility requirements such as contrast and readability, the design also addresses cognitive accessibility by reducing interface complexity and ensuring consistent interaction patterns.
+  </p>
+
+  <p><strong>Optional accessibility features include:</strong></p>
+  <ul>
+    <li>Speech support</li>
+    <li>Large text mode</li>
+    <li>Colour-blind mode</li>
+  </ul>
+
+  <p>
+    These features are implemented without interfering with the default simplified experience.
+  </p>
+
+  <p>
+    Evaluation will include WCAG-based accessibility testing, screen reader testing, and keyboard-only navigation testing.
+  </p>
+
+  <h2>Evaluation approach</h2>
+
+  <p>
+    The system will be evaluated using both automated and manual methods.
+  </p>
+
+  <p><strong>Automated evaluation includes:</strong></p>
+  <ul>
+    <li>Accessibility audits (WCAG compliance)</li>
+    <li>Lighthouse performance testing</li>
+    <li>Code structure validation</li>
+  </ul>
+
+  <p><strong>Manual evaluation focuses on user task performance:</strong></p>
+  <ul>
+    <li>Task creation, completion, and deletion</li>
+    <li>Timer usage and focus tracking</li>
+    <li>Interaction with community posts</li>
+    <li>Keyboard-only navigation testing</li>
+  </ul>
+
+  <p>
+    Success is defined by whether users can complete core workflows with minimal cognitive effort rather than feature richness.
+  </p>
+
+  <h2>Ethical and data considerations</h2>
+
+  <p>
+    The application stores all data locally using localStorage and does not collect external personal data. This reduces privacy risks and aligns with data minimisation principles under the Australian Privacy Act 1988.
+  </p>
+
+  <p>
+    Community posts are not ranked, profiled, or algorithmically manipulated, reducing risks of engagement bias and behavioural tracking.
+  </p>
+
+  <h2>Summary</h2>
+
+  <p>
+    The system is designed to meet both functional and accessibility requirements by integrating a required community feature in a simplified and constrained form. This ensures that the application supports productivity, focus, and social interaction simultaneously, without compromising usability for students with attention difficulties.
   </p>
 
 </body>
