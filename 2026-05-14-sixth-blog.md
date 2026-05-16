@@ -1,37 +1,24 @@
 ---
-title: "Revisiting Earlier Assumptions: Balancing Future Expansion and Design Simplicity"
-date: 2026-05-14
+title: "Revisiting Earlier Assumptions: Balancing Simplicity and Community Support"
+date: 2026-05-16
 author: "Yan LIU"
-summary: "Reflecting on earlier design decisions and evaluating how future feature expansion may affect usability, cognitive load, and technical complexity."
+summary: "Reflecting on earlier design assumptions and reconsidering how lightweight community interaction can support students with attention difficulties without increasing cognitive load."
 tags:
   - design-reflection
-  - trade-offs
-  - scalability
+  - community
+  - accessibility
 ---
 
-As development planning progresses, it becomes increasingly important to revisit earlier assumptions and evaluate whether the current design direction still aligns with the application's core goals. Although previous decisions focused heavily on limiting complexity and reducing cognitive load, further reflection reveals that maintaining simplicity over time may become more difficult as additional features are considered.
+As the project developed, earlier design decisions focused primarily on creating a simple productivity support tool for students with attention difficulties such as ADHD. Previous reflections emphasised reducing cognitive load through minimal interfaces, limited functionality, and simplified task tracking systems. However, after revisiting the BlaBla Corp design brief, it became clear that the project should not only function as a personal productivity application but also as a community hub that encourages interaction and shared experiences between users.
 
-One of the major challenges in software design is that applications often grow beyond their original scope. Features that initially appear useful can gradually increase interface complexity, technical maintenance requirements, and user distraction. This issue is particularly important for this project because the target users—students with attention difficulties—may be negatively affected by overly complicated interfaces or inconsistent interaction patterns.
+This reflection revealed an important limitation in the earlier design direction. While simplifying the interface successfully reduced distraction and usability complexity, it also unintentionally removed opportunities for social connection and peer support. Since the design brief highlights community engagement as a central requirement, the application must balance simplicity with meaningful forms of interaction.
 
-Earlier blog posts identified several features as optional, including social interaction systems, resource sharing, and account-based synchronization. At the time, excluding these features appeared to be the most appropriate decision due to both technical limitations and usability concerns. However, revisiting these assumptions highlights that some optional features may eventually provide meaningful value if implemented carefully.
+The challenge, therefore, becomes more complex than simply reducing features. The system must support community participation without introducing overwhelming interface complexity or unnecessary distractions. For users with attention difficulties, highly interactive social platforms may increase cognitive strain rather than improve the experience. As a result, future community features should remain lightweight, optional, and carefully integrated into the existing simplified structure.
 
-System Design and Future Feature Expansion
+Rather than implementing complex social networking systems such as large discussion feeds or constant notifications, the platform could introduce smaller community-oriented interactions. Examples may include sharing study strategies, optional daily check-ins, anonymous encouragement posts, or lightweight progress sharing between users. These features would allow users to feel supported by a community while maintaining a calm and predictable interface.
 
-The diagram below illustrates the relationship between the current prototype, minimal task tracking functionality, and potential future feature expansion.
+Figure 1 illustrates the revised design direction. The original prototype focused mainly on individual task management and progress tracking. The updated direction introduces a lightweight community layer while still preserving the core principle of low cognitive load.
 
-**Figure 1: Relationship between current prototype and optional future features**
+<img width="341" height="321" alt="B6" src="https://github.com/user-attachments/assets/0704e6b2-515c-47f9-aa58-f8ade8c07af8" />
 
-<img width="261" height="211" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/0d4b31b2-bed4-48ef-9926-fd734f3d66ac" />
-
-For example, progress visualisation was initially considered potentially distracting because excessive charts or statistics could increase cognitive load. However, after further consideration, a very minimal form of progress feedback may actually improve user motivation without introducing significant complexity. A simple visual indicator, such as a daily completion bar or streak counter, could help users recognise small achievements and encourage consistent study habits.
-
-This introduces an important design trade-off. Providing feedback can improve motivation and long-term engagement, but excessive feedback systems may unintentionally create pressure or anxiety. Many productivity applications rely heavily on gamification techniques such as achievement systems, notifications, and competitive tracking. While these systems may increase engagement for some users, they may also become overwhelming or distracting for students who already struggle with attention regulation.
-
-As a result, any future expansion of the application should follow the same principle established in earlier design decisions: additional functionality should only be introduced if it directly supports the user's core needs without significantly increasing cognitive complexity. This means that future features should remain lightweight, predictable, and optional wherever possible.
-
-This reflection also affects technical planning. Although the current simplified data structure and local storage approach are sufficient for the prototype, future expansion may eventually require more scalable architecture. For example, if long-term progress tracking or cross-device synchronization becomes necessary, the application may need a database-backed system and user authentication. However, introducing these systems too early could increase implementation complexity before their value is clearly justified.
-
-At this stage, the project continues to prioritise clarity and feasibility over feature expansion. Revisiting earlier assumptions has reinforced that successful design is not about continuously adding functionality, but about carefully evaluating whether each addition genuinely improves the user experience.
-
-Ultimately, this process demonstrates that design decisions should remain flexible and open to reassessment throughout development. Rather than treating early decisions as fixed, it is important to continually reflect on how well the application aligns with its original purpose: supporting students with attention difficulties through a simple, focused, and accessible learning environment.
-
+This revised perspective reinforces that successful design is not determined by the number of features included, but by how effectively the system supports user needs within its intended context. Moving forward, future design decisions will continue prioritising accessibility and cognitive simplicity while also exploring how carefully designed community interaction can improve user motivation and support.
